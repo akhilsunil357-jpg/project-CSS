@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Simple Blog Post</title>
+
+<style>
+
+.blog {
+    width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+
+.blog p::first-line {
+    font-weight: bold;
+}
+
+
+.blog p::first-letter {
+    font-size: 30px;
+    color: darkred;
+}
+
+
+.quote {
+    margin: 15px 0;
+    padding-left: 10px;
+    border-left: 3px solid gray;
+    font-style: italic;
+}
+
+
+.quote::before {
+    content: "“ ";
+    font-size: 20px;
+}
+
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+h4 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+h4 + h4 {
+    color: green;
+}
+</style>
 </head>
+
 <body>
-    
+
+<div class="blog">
+    <h2>My Simple Blog Post</h2>
+    <p><b>Author:</b> Akhil Sunil</p>
+
+    <p>
+        This is a simple blog post example to demonstrate basic CSS features.
+        You can learn pseudo-elements, selectors, and simple layout techniques easily.
+        Visit <a href="#">this link</a> for more details.
+    </p>
+
+    <div class="quote">
+        Learning CSS step by step makes web design easy.
+    </div>
+
+    <h4>Tag 1</h4>
+    <h4>Tag 2</h4>
+</div>
+
 </body>
 </html>
