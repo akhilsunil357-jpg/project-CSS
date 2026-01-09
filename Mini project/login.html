@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+
+
+.left {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    background: linear-gradient(180deg, #b9b9ee, rgb(206, 176, 155));
+}
+
+
+.right {
+    width: 50%;
+    height: 100vh;
+    float: right;
+    background: white;
+}
+
+
+.inputs {
+    width: 600px;
+    margin: 100px auto;
+}
+
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    
+}
+.log{
+    color: orangered;
+}
+
+
+.check{
+    margin: 8px 0;
+}
+
+button {
+    width: 620px;
+    padding: 10px;
+    background:orangered;
+    color: white;
+    border: none;
+}
+
+@media(max-width:768px) {
+    .left {
+        display: none;
+        
+    }
+    .right {
+        width: 100%;
+        
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="left"></div>
+
+<div class="right">
+    <div class="inputs">
+        <h2 class="log">Login Form</h2>
+        <form method="post" target="_blank">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required ><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required ><br>
+
+        <label class="check">
+            <input type="checkbox"> Remember Me
+        </label><br><br>
+
+        <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
